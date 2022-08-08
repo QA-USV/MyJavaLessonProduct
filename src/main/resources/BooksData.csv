@@ -1,0 +1,23 @@
+Product book1 = new Book(001, "Black&White", 999,              "Smith Jr."
+        );
+
+        Product book2 = new Book(
+                002,
+                "More Green Less White",
+                888,
+                "John Wood"
+        );
+
+        Product book3 = new Book(
+                003,
+                "White Apple",
+                777,
+                "Lost Miner"
+        );
+
+        Product book4 = new Book(
+                004,
+                "Black&Blue",
+                666,
+                "Sam Rainbow"
+        );
