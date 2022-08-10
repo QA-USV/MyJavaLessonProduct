@@ -11,6 +11,8 @@ public class ProductRepositoryTest {
     Product book2 = new Book(2, "Book002", 888, "Author111");
     Product book3 = new Book(3, "Book003", 777, "Author222");
     Product book4 = new Book(4, "Book004", 666, "Author222");
+    Product book5 = new Book(0, "Book005", 555, "Author000");
+    Product book6 = new Book(-1, "Book006", 444, "Author333");
     Product smartphone1 = new Smartphone(5, "Mate 99", 79_999, "Huawei");
     Product smartphone2 = new Smartphone(6, "Iphone 11", 49_999, "Apple");
     Product smartphone3 = new Smartphone(7, "Iphone 12", 99_999, "Apple");
@@ -41,6 +43,16 @@ public class ProductRepositoryTest {
         repo.save(smartphone3);
 
         Assertions.assertThrows(AlreadyExistsException.class, () -> repo.save(book2));
+    }
+
+    @Test
+    public void shouldNotSaveZeroId() {
+
+        repo.save(book1);
+        repo.save(book4);
+
+        Assertions.assertThrows(NotFoundException.class, () -> repo.save(book5));
+        Assertions.assertThrows(NotFoundException.class, () -> repo.save(book6));
     }
 
     @Test

@@ -4,10 +4,6 @@ public class ProductRepository {
 
     private Product[] products = new Product[0];
 
-    public Product[] findAll() {
-        return products;
-    }
-
     public Product findById(int id) {
         for (Product product : products) {
             if (product.getId() == id) {
@@ -22,6 +18,11 @@ public class ProductRepository {
         if (findById(product.id) != null) {
             throw new AlreadyExistsException(
                     "Product with id: " + product.getId() + " already exist."
+            );
+        }
+        if (product.id <= 0) {
+            throw new NotFoundException(
+                    "Product id must be more then zero."
             );
         }
         for (int i = 0; i < products.length; i++) {
@@ -46,5 +47,9 @@ public class ProductRepository {
             }
             products = tmp;
         }
+    }
+
+    public Product[] findAll() {
+        return products;
     }
 }
