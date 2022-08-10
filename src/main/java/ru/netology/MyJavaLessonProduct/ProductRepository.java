@@ -21,7 +21,7 @@ public class ProductRepository {
             );
         }
         if (product.id <= 0) {
-            throw new NotFoundException(
+            throw new UnacceptableException(
                     "Product id must be more then zero."
             );
         }

@@ -46,13 +46,13 @@ public class ProductRepositoryTest {
     }
 
     @Test
-    public void shouldNotSaveZeroId() {
+    public void shouldNotSaveZeroAndNegativeId() {
 
         repo.save(book1);
         repo.save(book4);
 
-        Assertions.assertThrows(NotFoundException.class, () -> repo.save(book5));
-        Assertions.assertThrows(NotFoundException.class, () -> repo.save(book6));
+        Assertions.assertThrows(UnacceptableException.class, () -> repo.save(book5));
+        Assertions.assertThrows(UnacceptableException.class, () -> repo.save(book6));
     }
 
     @Test
@@ -75,7 +75,7 @@ public class ProductRepositoryTest {
     }
 
     @Test
-    public void shouldRemoveByPositiveFakeId() {
+    public void shouldAlarmAboutRemovingPositiveFakeId() {
         repo.save(book1);
         repo.save(book2);
         repo.save(book3);
@@ -89,7 +89,7 @@ public class ProductRepositoryTest {
     }
 
     @Test
-    public void shouldRemoveByNegativeFakeId() {
+    public void shouldAlarmAboutRemovingNegativeFakeId() {
         repo.save(book1);
         repo.save(book2);
         repo.save(book3);
