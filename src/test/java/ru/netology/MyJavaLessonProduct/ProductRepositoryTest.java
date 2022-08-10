@@ -2,7 +2,8 @@ package ru.netology.MyJavaLessonProduct;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-import ru.netology.MyJavaLessonProduct.ProductRepository;
+
+import java.sql.SQLOutput;
 
 public class ProductRepositoryTest {
     ProductRepository repo = new ProductRepository();
@@ -32,6 +33,17 @@ public class ProductRepositoryTest {
     }
 
     @Test
+    public void shouldSaveTheSameIdProducts() {
+
+        repo.save(book1);
+        repo.save(book2);
+        repo.save(smartphone1);
+        repo.save(smartphone3);
+
+        Assertions.assertThrows(AlreadyExistsException.class, () -> repo.save(book2));
+    }
+
+    @Test
     public void shouldRemoveById() {
         repo.save(book1);
         repo.save(book2);
@@ -48,6 +60,34 @@ public class ProductRepositoryTest {
         Product[] actual = repo.findAll();
 
         Assertions.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void shouldRemoveByPositiveFakeId() {
+        repo.save(book1);
+        repo.save(book2);
+        repo.save(book3);
+        repo.save(book4);
+        repo.save(smartphone1);
+        repo.save(smartphone2);
+        repo.save(smartphone3);
+        repo.save(smartphone4);
+
+        Assertions.assertThrows(NotFoundException.class, () -> repo.removeById(10));
+    }
+
+    @Test
+    public void shouldRemoveByNegativeFakeId() {
+        repo.save(book1);
+        repo.save(book2);
+        repo.save(book3);
+        repo.save(book4);
+        repo.save(smartphone1);
+        repo.save(smartphone2);
+        repo.save(smartphone3);
+        repo.save(smartphone4);
+
+        Assertions.assertThrows(NotFoundException.class, () -> repo.removeById(-10));
     }
 
     @Test
@@ -73,4 +113,7 @@ public class ProductRepositoryTest {
         Assertions.assertArrayEquals(expected, actual);
     }
 
+    @Test
+    public void findById() {
+    }
 }

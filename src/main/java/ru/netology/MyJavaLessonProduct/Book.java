@@ -1,7 +1,7 @@
 package ru.netology.MyJavaLessonProduct;
 
 public class Book extends Product {
-//    private String name;
+    //    private String name;
     private String author;
 
     ProductRepository repo = new ProductRepository();

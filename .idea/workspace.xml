@@ -4,17 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40c8b2db-1228-49f9-8202-e6ed57ad14e6" name="Changes" comment="First commit">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/maven.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/maven.yml" afterDir="false" />
+    <list default="true" id="40c8b2db-1228-49f9-8202-e6ed57ad14e6" name="Changes" comment="For Exception HW commit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/AlreadyExistsException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/ProductManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/Smartphone.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/netology/MyJavaLessonProduct/Smartphone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/MyJavaLessonProduct/ProductManagerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/MyJavaLessonProduct/ProductManagerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ru/netology/MyJavaLessonProduct/ProductRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ru/netology/MyJavaLessonProduct/ProductRepositoryTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -52,20 +47,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_directory_selection": "D:/QAEngineer/QAJavaLessons/MyJavaLessonProduct/src/test/java",
-    "last_opened_file_path": "D:/QAEngineer/QAJavaLessons/MyJavaLessonOOPResources",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.17",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.general"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_directory_selection&quot;: &quot;D:/QAEngineer/QAJavaLessons/MyJavaLessonProduct/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/QAEngineer/QAJavaLessons/MyJavaLessonOOPResources&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.17&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.general&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -82,54 +77,7 @@
       <command value="mvn clean verify" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ProductManagerTest">
-    <configuration name="ProductManagerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyJavaLessonProduct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.MyJavaLessonProduct.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.MyJavaLessonProduct" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.MyJavaLessonProduct.ProductManagerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductManagerTest.shouldAddProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyJavaLessonProduct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.MyJavaLessonProduct.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.MyJavaLessonProduct" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.MyJavaLessonProduct.ProductManagerTest" />
-      <option name="METHOD_NAME" value="shouldAddProducts" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductManagerTest.shouldFindByAuthor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MyJavaLessonProduct" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.netology.MyJavaLessonProduct.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ru.netology.MyJavaLessonProduct" />
-      <option name="MAIN_CLASS_NAME" value="ru.netology.MyJavaLessonProduct.ProductManagerTest" />
-      <option name="METHOD_NAME" value="shouldFindByAuthor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ProductRepositoryTest">
     <configuration name="ProductRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyJavaLessonProduct" />
       <extension name="coverage">
@@ -145,7 +93,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductRepositoryTest.shouldGetAllWhenNothing" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ProductRepositoryTest.shouldRemoveByFakeId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MyJavaLessonProduct" />
       <extension name="coverage">
         <pattern>
@@ -155,7 +103,55 @@
       </extension>
       <option name="PACKAGE_NAME" value="ru.netology.MyJavaLessonProduct" />
       <option name="MAIN_CLASS_NAME" value="ru.netology.MyJavaLessonProduct.ProductRepositoryTest" />
-      <option name="METHOD_NAME" value="shouldGetAllWhenNothing" />
+      <option name="METHOD_NAME" value="shouldRemoveByFakeId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.shouldRemoveByPositiveFakeId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyJavaLessonProduct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.MyJavaLessonProduct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.MyJavaLessonProduct" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.MyJavaLessonProduct.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldRemoveByPositiveFakeId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.shouldSaveNewProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyJavaLessonProduct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.MyJavaLessonProduct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.MyJavaLessonProduct" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.MyJavaLessonProduct.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldSaveNewProducts" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductRepositoryTest.shouldSaveTheSameIdProducts" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MyJavaLessonProduct" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ru.netology.MyJavaLessonProduct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="ru.netology.MyJavaLessonProduct" />
+      <option name="MAIN_CLASS_NAME" value="ru.netology.MyJavaLessonProduct.ProductRepositoryTest" />
+      <option name="METHOD_NAME" value="shouldSaveTheSameIdProducts" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +159,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ProductManagerTest" />
-        <item itemvalue="JUnit.ProductManagerTest.shouldFindByAuthor" />
-        <item itemvalue="JUnit.ProductRepositoryTest.shouldGetAllWhenNothing" />
         <item itemvalue="JUnit.ProductRepositoryTest" />
-        <item itemvalue="JUnit.ProductManagerTest.shouldAddProducts" />
+        <item itemvalue="JUnit.ProductRepositoryTest.shouldSaveTheSameIdProducts" />
+        <item itemvalue="JUnit.ProductRepositoryTest.shouldRemoveByPositiveFakeId" />
+        <item itemvalue="JUnit.ProductRepositoryTest.shouldRemoveByFakeId" />
+        <item itemvalue="JUnit.ProductRepositoryTest.shouldSaveNewProducts" />
       </list>
     </recent_temporary>
   </component>
@@ -194,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659984636575</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="First commit">
+      <created>1660060975914</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660060975914</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -210,6 +213,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="For Exception HW commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="For Exception HW commit" />
   </component>
 </project>
