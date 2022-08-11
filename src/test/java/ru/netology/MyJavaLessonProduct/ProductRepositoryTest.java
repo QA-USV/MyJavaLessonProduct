@@ -127,5 +127,13 @@ public class ProductRepositoryTest {
 
     @Test
     public void findById() {
+        repo.save(book1);
+        repo.save(book2);
+        repo.save(book3);
+
+        Product[] expected = {book2};
+        Product actual = repo.findById(2);
+
+        Assertions.assertArrayEquals(expected, new Product[]{actual});
     }
 }
